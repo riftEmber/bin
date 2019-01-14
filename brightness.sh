@@ -1,3 +1,4 @@
 #!/bin/bash
-# Tony's script for outputting screen brightness. Requires 'light'
+
+# script for outputting screen brightness with the program 'light'
 printf '%.*f%%' 0 $(light)
