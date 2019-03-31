@@ -2,5 +2,7 @@
 
 # take a screenshot
 
-scrot -e 'mv $f ~/Pictures/screenshots/'
-notify-send "Taking a screenshot"
+SCREENSHOT_DIR=~/Pictures/screenshots/
+mkdir -p $SCREENSHOT_DIR
+scrot -e "mv \$f $SCREENSHOT_DIR"
+notify-send "Screenshot saved to $SCREENSHOT_DIR"
