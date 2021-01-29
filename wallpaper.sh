@@ -2,8 +2,8 @@
 
 # sets the appropriate wallpaper
 
-VIDEO_LOCATION="$HOME/Dropbox/pictures/wallpapers/wallpaper.mp4"
-IMAGE_LOCATION="$HOME/Dropbox/pictures/wallpapers/wallpaper.jpg"
+VIDEO_LOCATION="$HOME/syncthing/pictures/wallpapers/wallpaper.mp4"
+IMAGE_LOCATION="$HOME/syncthing/pictures/wallpapers/wallpaper.jpg"
 
 if [ -e $VIDEO_LOCATION ]; then
     mplayer -loop 0 -rootwin -ao null -noconsolecontrols -fs $VIDEO_LOCATION;
