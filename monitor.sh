@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# starting point
 xrandr --auto
-xrandr --output HDMI-1-1 --left-of eDP-1
-xrandr --output HDMI-1-1 --primary
+
+# disable internal monitor
+xrandr --output eDP-1 --off
+
+# set primary monitor
+xrandr --output DP-1-0 --primary
+
+# setup secondary monitor
+xrandr --output HDMI-1-0 --right-of DP-1-0
+xrandr --output HDMI-1-0 --rotate left
